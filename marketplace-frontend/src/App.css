@@ -1,0 +1,454 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.card-container.card {
+  max-width: 350px;
+  padding: 40px 40px;
+  background-color: #f3f0f0ea;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+.footer{
+  color: white;
+  background-color: #343a40;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.content-wrap{
+  flex: 1;
+}
+
+.words-color{
+ color: #FFFFFF80;
+}
+
+
+.words-color:hover{
+  text-decoration: none;
+  color: rgb(231, 227, 227);
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex{
+  display: flex;
+}
+
+
+
+
+.header{
+  background-color: #343a40;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+header nav{
+  display: flex;
+}
+
+
+header nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #FFFFFF80;
+  padding: 20px 20px;
+}
+
+
+header nav ul li a:hover{
+  text-decoration: none;
+  color: rgb(231, 227, 227);
+}
+
+.nav-cart{
+  cursor: pointer;
+  position: relative;
+}
+
+.cart-span{
+  
+  position: absolute;
+  top: -12px;
+  right:-8px;
+  background: orange;
+  font-size: 15px;
+  padding: 5px, 5px;
+  border-radius: 40%;
+}
+
+header .menu, 
+header .close{
+  cursor: pointer;
+  display: none;
+}
+
+
+.section{
+  box-shadow: 0 0 5px #ccc;
+  padding: 15px, 15px;
+}
+
+
+#product{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-product{
+  min-width: 300px;
+  min-width: 300px;
+  max-height: 450px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 2px 8px 20px #ddd;
+  margin: 15px;
+  transition: 0.5s linear;
+}
+
+.card-product:hover{
+  box-shadow: none;
+}
+
+.card-product img{
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-product h3 a{
+  text-decoration: none;
+  color: #333;
+}
+
+.card-product h3 a:hover{
+  color: red;
+}
+
+.card-product-span{
+  color: red;
+}
+
+
+
+.card-details-product{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px, 0;
+  padding: 20px 20px;
+}
+
+.card-details-product img{
+  max-width: 300px;
+  min-width: 170px;
+  height: 300px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card-details-product .box{
+  max-width: 500px;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.box .row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .row h2{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 16px;
+}
+
+
+.box p{
+  margin: 15px, 0;
+  line-height: 2;
+}
+
+section .cart{
+  position: relative;
+  border: 1.5px solid #ccc;
+}
+
+.amount{
+  margin-left: 4px;
+}
+
+.amount span{
+  padding: 0 20px;
+  color: red;
+}
+
+.amount .count{
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+  border: 1px solid #555;
+  text-align: center;
+}
+
+
+/* -butonul din dreapta sus pentru a elimina un produs din cosul de cumparaturi sau de la favorite */
+.delete{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+  color: black;
+  font-weight: 800;
+}
+
+.total{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.total a{
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+}
+
+.total a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.filter-bar{
+  width: 210px;
+  height: 1110px;
+  border: 1px solid #eee;
+}
+
+.space-left{
+  padding-left: 20px;
+}
+
+.price-input-form{
+  width: 70px;
+  height: 25px;
+}
+
+.select-stare-produs{
+  width: 158px;
+}
+
+.center-brand{
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.brands-container-1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.brands-container-2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-img{
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  border: 3px solid #eee;
+  transition: transform 0.2s ease;
+}
+
+.brand-img:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* -pentru caseta in care scriem comentariu la un produs */
+.caseta-comentariu{
+  width: 70%;
+  height: 100px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  background-color: #fafcf7;
+  margin-left: 15px;
+  margin-top: 15px;
+  line-height: 1.5;
+  color: #797979;
+}
+
+
+ /* -pentru o caseta in care se afla un comentariu la un produs */
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #ccc;
+}
+
+.tip-left {
+  top: 10px;
+  left: -25px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+.dialogbox .body {
+  position: relative;
+  max-width: 500px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: #fafcf7;
+  border-radius: 3px;
+  border: 5px solid #ccc;
+  margin-left: 15px;
+}
+
+.body .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #797979;
+}
+
+/* -pentru caseta in care se afla usernameul utilizatorului care a postat comentariul la un produs */
+.caseta-username {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 5px solid #ccc;
+  background-color: #fafcf7;
+  margin-left: 15px;
+  padding: 2px 3px 3px 3px;
+  color: #797979;
+}
+
+/* -containerul pentru unul din produsele recomandate din carousel */
+.carousel-product-card{
+  width: 100%;
+  height: 280px;
+  color:black;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid rgb(230, 205, 158);
+}
+
+
+
+
+
+
