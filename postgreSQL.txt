@@ -1,0 +1,39 @@
+SELECT *
+FROM pg_catalog.pg_tables
+WHERE schemaname != 'pg_catalog' AND 
+    schemaname != 'information_schema';
+	
+select * from roles;
+select * from user_role;
+select * from users;
+select * from products;
+select * from orders;
+select * from message;
+
+insert into roles(name) values ('ROLE_USER'),('ROLE_ADMIN');
+
+insert into products(categorie, culoare, descriere, firma, imagine, marime, pret, pret_reducere, tip_produs, titlu, uzura, numar, reducere, proprietar, scor) values 
+('barbati', 'alb', 'descriere', 'nike', 'https://static.footshop.com/306922/61168.jpg', '43', 500, 500, 'papuci', 'Nike Air Force 1 High', 'nou', 1, 0, 'qbec-marketplace', 8120),
+('barbati', 'negru', 'descriere', 'nike','https://desportivo.ro/userdata/public/gfx/44279/2019_02_12_DESPORTIVO_0031-3.jpg', 'M', 180, 180, 'bluza', 'Bluza Nike Park 20', 'nou', 1, 0, 'qbec-marketplace', 8420),
+('barbati', 'negru', 'descriere', 'nike','https://cdn.aboutstatic.com/file/images/0685b203edf5097b12fed9b6ba4c2b76.jpg?width=1200&height=1600&quality=75&bg=FFFFFF&brightness=0.96&trim=1', 'S', 120, 120, 'tricou', 'Tricou Nike Sport', 'nou', 1, 0, 'qbec-marketplace', 8520),
+('barbati', 'maro', 'descriere', 'nike', 'https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/oktc8rwsjw7st7scvqrd/air-force-1-high-07-shoe-tg72Lx.png', '45', 430, 430, 'papuci', 'Nike Air Force 1 High', 'nou', 1, 0, 'qbec-marketplace', 8120),
+('barbati', 'albastru', 'descriere', 'puma', 'https://static.originals.ro/images/2017/09/07/pantaloni-barbati-puma-archive-t7-57331306-17159-1.jpg', 'M', 150, 150, 'pantaloni', 'Pantaloni Archive T7', 'nou', 1, 0, 'qbec-marketplace', 8860),
+('barbati', 'negru', 'descriere', 'puma', 'https://static.b-mall.ro/cs-galleries/7/7/0/7/7707481/56231545/main-1000.jpg', 'M', 120, 120, 'tricou', 'Tricou Polo 8571', 'nou', 1, 0, 'qbec-marketplace', 8560),
+('femei', 'negru', 'descriere', 'nike', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlLOQxpBTeDLaPjTX3Me-8djdzM-yOTw7UxdKqdvMqXMGdDBFLkFkzjSzUQh3vSaS3c2HHY7H1&usqp=CAc', 'S', 200, 200, 'pantaloni', 'Nike Colanti PRO', 'nou', 1, 0, 'qbec-marketplace', 2820),
+('femei', 'negru', 'descriere', 'adidas', 'https://contents.mediadecathlon.com/p1888431/k92b5166b1361f7d0b130c21bc301449a/1888431_default.jpg?format=auto&quality=60&f=800x0', 'S', 180, 180, 'tricou', 'Adidas Originals MR', 'nou', 1, 0, 'qbec-marketplace', 2560),
+('femei', 'negru', 'descriere', 'nike', 'https://contents.mediadecathlon.com/p1508535/k5653523703b68786dd177be747f4cfc7/1508535_default.jpg?format=auto&quality=60&f=800x0', 'S', 250, 250, 'bluza', 'Bluza Nike Dry', 'nou', 1, 0, 'qbec-marketplace', 2420),
+('femei', 'roz', 'descriere', 'adidas', 'https://static.footshop.com/233731/42963.jpg', '38', 500, 500, 'papuci', 'Adidas Ozweego', 'nou', 1, 0, 'qbec-marketplace', 2140),
+('femei', 'alb', 'descriere', 'adidas', 'https://static.footshop.com/248243-full_product/48561.jpg', '38', 400, 400, 'papuci', 'Adidas Superstar Ftw', 'nou', 1, 0, 'qbec-marketplace', 2140),
+('femei', 'rosu', 'descriere', 'nike', 'https://static.originals.ro/images/2016/11/08/bluza-femei-nike-np-cl-725740620-15432-1.jpg', 'S', 270, 270, 'bluza', 'Bluza Nike NP NL', 'nou', 1, 0, 'qbec-marketplace', 2520),
+('copii', 'negru', 'descriere', 'nike', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKSVsd_S9seetN1XPYnByH5yiqZZA8EalDukyxn-UtYfQhN-GGTib4uWyEC5Uv9MQUJShzb1I&usqp=CAc', 'XS', 175, 175, 'tricou', 'Tricou Functional Nike', 'nou', 1, 0, 'qbec-marketplace', 5520),
+('copii', 'gri', 'descriere', 'puma', 'https://www.bravosport.ro/imagini/produse/mare/bluze-de-trening-puma-ess-logo-crew-sweat-fl-barbati-804063_0_full.jpg', 'XS', 300, 300, 'bluza', 'Bluza Sport Crew', 'nou', 1, 0, 'qbec-marketplace', 5460),
+('copii', 'negru', 'descriere', 'nike', 'https://static.footshop.com/257064/50530.jpg', 'S', 200, 200, 'pantaloni', 'Nike BB Joger Pants', 'nou', 1, 0, 'qbec-marketplace', 5820),
+('copii', 'portocaliu', 'descriere', 'adidas', 'https://static.footshop.com/321868/67699.jpg', '35', 200, 200, 'papuci', 'Fish Slip-On V', 'nou', 1, 0, 'qbec-marketplace', 5140),
+('copii', 'alb', 'descriere', 'adidas', 'https://photos6.spartoo.ro/photos/186/18628894/18628894_500_A.jpg', 'XS', 180, 180, 'tricou', 'Tricou LD DB kids', 'nou', 1, 0, 'qbec-marketplace', 5540),
+('copii', 'rosu', 'descriere', 'puma', 'https://s13emagst.akamaized.net/products/31626/31625205/images/res_f08ec53bfcfafb34f5b7ce6f13c4e938.jpg', 'XS', 320, 320, 'bluza', 'Bluza Sport Alpha', 'nou', 1, 0, 'qbec-marketplace', 5460);
+
+insert into products(categorie, culoare, descriere, firma, imagine, marime, pret, pret_reducere, tip_produs, titlu, uzura, numar, reducere, proprietar, scor) values 
+('copii', 'rosu', 'descriere', 'puma', 'https://s13emagst.akamaized.net/products/31626/31625205/images/res_f08ec53bfcfafb34f5b7ce6f13c4e938.jpg', 'XS', 320, 160, 'bluza', 'Bluza Sport Alpha', 'nou', 1, 50, 'qbec-marketplace', 5460);
+
+
+

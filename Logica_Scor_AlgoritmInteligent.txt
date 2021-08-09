@@ -1,0 +1,13 @@
+1.CATEGORIE --> Femei = 2000
+	    --> Copii = 5000
+	    --> Barbati = 8000
+
+2.TIP_PRODUS --> Papuci = 100
+	     --> Bluza = 400
+	     --> Tricou = 500
+	     --> Pantaloni = 800
+
+3.FIRMA --> Nike = 20
+	--> Adidas = 40
+	--> Puma = 60
+	--> NB = 80
